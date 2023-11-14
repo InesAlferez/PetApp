@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="d-flex flex-row-reverse">
+            <div class="col-md-4 me-auto">
+                <h1 class="section-heading">Do you need to contact us?</h1>
+                <p class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt
+                    dolore mollitia esse natus beatae.</p>
+            </div>
+            <div class="col-md-4 me-auto">
+                <img src="/static/images/img10.jpg" alt="support" id="support1" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="Support">
+    <div class="container">
+        <div>
+            <h2 class="section-heading text-uppercase">Request Assistance</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Your Name</label>
+                          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPhoneNumber1">Phone Number</label>
+                          <input type="phone" class="form-control" id="exampleInputPhoneNumber1" placeholder="Phone Number" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                          </div>
+                          <br>
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        {% endblock %}
+</section>
+<!--End of Support Form-->
