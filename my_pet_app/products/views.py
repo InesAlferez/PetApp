@@ -91,10 +91,6 @@ def remove_from_cart(request, cart_item_id):
     cart_item.delete()
     return redirect('cart_view')
 
-def testing(request):
-    template = loader.get_template('testing.html')
-    return HttpResponse(template.render(request))
-
 def update_cart(request, cart_item_id):
     cart_item = get_object_or_404(Cart, pk=cart_item_id)
     if request.method == 'POST':
