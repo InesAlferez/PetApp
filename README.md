@@ -58,10 +58,3 @@ Access the application via the provided routes and functionalities described abo
 * Github: [@InesAlferez](https://github.com/InesAlferez)
 
 * LinkedIn: [@ines-alferez-0a0881234](https://linkedin.com/in/ines-alferez-0a0881234)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
