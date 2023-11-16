@@ -34,16 +34,20 @@ Renders the 'details.html' template to display product-specific information.
 <h2>Usage:</h2>
 
 ## Clone the repository: 
-```sh git clone https://github.com/yourusername/petpro.git
+```sh 
+git clone https://github.com/yourusername/petpro.git
 ```
 ## Set up a virtual environment and install dependencies using:
-```sh pip install -r requirements.txt.
+```sh 
+pip install -r requirements.txt.
 ```
 ### Run migrations: 
-```sh python manage.py migrate.
+```sh 
+python manage.py migrate.
 ```
 ### Start the development server: 
-```sh python manage.py runserver.
+```sh 
+python manage.py runserver.
 ```
 Access the application via the provided routes and functionalities described above.
 
